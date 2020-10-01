@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to left, #c06804, black);
+}
+
+.container {
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.container h1 {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  color: #fff;
+}
+.container h2 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.container .headers {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container .headers .game-reset {
+  margin-left: 20px;
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  background-color: rgba(219, 5, 5, 0.774);
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.container .headers .game-reset:focus {
+  outline: none;
+  background-color: rgba(219, 5, 5, 0.534);
+}
+.container .headers .game-start {
+  width: 20%;
+  margin-left: 20px;
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  background-color: #06f006;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.container .headers .game-start:focus {
+  outline: none;
+  background-color: rgba(6, 240, 6, 0.534);
+}
+.container .game-area {
+  display: grid;
+  grid-template-columns: repeat(3, 125px);
+  grid-template-rows: repeat(3, 125px);
+  margin-top: 50px;
+  justify-content: center;
+}
+.container .game-area .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: #fff;
+}
+.container .game-area .cell:hover {
+  background-color: rgba(6, 200, 248, 0.411);
+}
+.container .game-area .cell0, .container .game-area .cell1, .container .game-area .cell2,
+.container .game-area .cell3, .container .game-area .cell4, .container .game-area .cell5 {
+  border-bottom: 2px solid #fff;
+}
+.container .game-area .cell0, .container .game-area .cell1,
+.container .game-area .cell3, .container .game-area .cell4,
+.container .game-area .cell6, .container .game-area .cell7 {
+  border-right: 2px solid #fff;
+}
+
+.image1, .image2 {
+  width: 125px;
+  height: 125px;
+}
+
+.winner {
+  color: red;
+}
